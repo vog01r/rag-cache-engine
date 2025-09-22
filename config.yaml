@@ -1,0 +1,17 @@
+# Configuration pour la démo RAG
+embedding:
+  model_name: "all-MiniLM-L6-v2"
+  
+vector_store:
+  dimension: 384  # dimension du modèle all-MiniLM-L6-v2
+  
+retrieval:
+  k: 4  # nombre de documents à récupérer
+  
+cache:
+  ttl_seconds: 3600  # 1 heure
+  max_size: 1000
+  
+chunking:
+  max_tokens: 500
+  overlap: 50
